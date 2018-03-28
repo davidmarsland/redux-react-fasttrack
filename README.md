@@ -7,22 +7,15 @@
 <br>
 <a target="_di" href="http://developintelligence.com">DevelopIntelligence.com</a>
 <br>
-<a target="_git_react" href="https://davidmarsland.github.io/react-components/">https://davidmarsland.github.io/react-components/</a>
+<a target="_git_react" href="https://davidmarsland.github.io/redux-react-fasttrack/">https://davidmarsland.github.io/redux-react-fasttrack/</a>
 
 ---
-### FastTrack to React Component Development Training
+### FastTrack to Redux with React Training
+**FastTrack to Redux with React Training** ​teaches students how to use two important React-related libraries: Redux and React Router. Building upon the solid foundation of Flux principles, Redux is explained and demonstrated as it related to Flux and React. Additionally, routing with React Router is explored and integrated with Redux. Utilizing best practices, students build a real application from scratch utilizing the more import aspects of React, Redux and React Router.
 
-The **FastTrack to React Component Development Training** class teaches the essentials of building UI components with React. 
+* Prerequisites: Advanced JavaScript ES6 and React Development Experience
 
-The course dives deep into the core workings of React, and explores the practical aspects of developing React projects. 
-
-Utilizing best practices, students build a real application utilizing the more important aspects of React.
-
-* Core Audience: Experienced JavaScript developers interested in bringing structure to their rapidly growing web applications
-
-* Prerequisites: Advanced JavaScript that includes Object Oriented concepts, Ajax, promises, prototypal inheritance, ES6 and module design patterns. 
-
-  Ideally attendees of *JavaScript (ES2017) for React and GraphQL Developers Course* with 3-6 months of recent Javascript experience.
+  Ideally attendees of **FastTrack to React Training** with 3-6 months of recent Javascript experience.
 
 * If you want to learn more about ES6, aka ES2015, here are some good tutorials:
       <br><a target="_babel" href="https://babeljs.io/learn-es2015/">https://babeljs.io/learn-es2015/</a>
@@ -39,21 +32,21 @@ Utilizing best practices, students build a real application utilizing the more i
 ---
 ### Course Outline and Topics
 
-* React Overview
-* Project Configuration with Babel and Webpack
-* Hello World React
-* Working with JSX
-* Component Props and Prop Validation
-* Displaying Lists of Data and Keys
-* Managing Component State
-* Configuring Event Handlers
-* Exploring Controlled and Uncontrolled Form Controls
-* Working with Refs
-* InnerHTML and XSS Attacks
-* Composing Components
-* Styling Components
-* Component Lifecycles
-* Stateless Component Functions
+* Flux & Redux Overview
+* Three Principles of Redux
+* Immutable Programming
+* Configuring Actions
+* Creating Reducer Functions
+* Working with Stores
+* Combining Reducers
+* Integrating with React
+* Middleware Overview
+* Creating Custom Middleware
+* React-Thunk and Asynchronous Actions
+* Creating Containers with React-Redux
+* Integrating React Router with React/Redux
+* Configuring Paths
+* Working with URL Parameters
 
 ---
 ### Lab Setup
