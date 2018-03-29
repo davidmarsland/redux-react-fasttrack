@@ -24,10 +24,10 @@
 
 ---
 ### Course Objectives
-* Describe React and the problem it solves
-* Configure a React development environment
-* Explore the basic architecture of a React component
-* Develop React components using JSX
+* Describe Redux and the problem it solves
+* Configure a React and Redux development environment
+* Explore the basic architecture of a React Redux application
+* Develop applications using React and Redux
 
 ---
 ### Course Outline and Topics
@@ -127,3 +127,322 @@ Web Development since the Dawn of the Web <br>
 * DevelopIntelligence Senior Technical Instructor 2017-
 
 ---
+
+---
+### Flux
+<a target="_ref" href="http://facebook.github.io/flux/docs/in-depth-overview.html#content">Flux from Facebook
+
+---
+### Redux
+<a target="_ref" href="https://redux.js.org/">redux.js.org</a>
+
+<a target="_ref" href="http://blog.isquaredsoftware.com/presentations/2017-02-react-redux-intro/#/33">
+State Management with React and Redux</a>
+
+
+---
+### Redux Example and Lab
+<a target="_ref" href="https://csb-62zvqom7kk-janthncuwn.now.sh/">
+Redux Example Incrementer</a>
+
+---
+### Redux DevTools
+
+<a target="_ref" href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en">Redux DevTools - Chrome Web Store</a>
+
+Note, you must add a line to source code to enable tooling.  Try this on a Redux example without this and it will provide instructions:
+<br>*No store found. Make sure to follow the <a target="_ref" href="https://github.com/zalmoxisus/redux-devtools-extension#usage">instructions</a>.*
+
+For a basic Redux store simply add:            
+```JavaScript
+ const store = createStore(
+   reducer, /* preloadedState, */
++  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+ );
+```
+
+---
+
+### Redux Todo Example App from Redux Course 
+* <a target="_redux" href="https://github.com/sadams/todo-redux-react-webpack">https://github.com/sadams/todo-redux-react-webpack</a>
+* Clone repo, then:
+```
+npm install
+npm run start
+```
+* Launches on localhost:8080 by default.
+
+---
+### Redux Labs
+
+
+* <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from thinkster.io</a>
+<br>Note, to do the labs you will have to change git commands similar to this:
+```
+git clone -b 00 https://github.com/gothinkster/react-redux-realworld-example-app.git
+```
+Then `cd react-redux-realworld-example-app` and <br> `npm install` to download node modules (may take a while on windows) and `npm run start` to run a development server
+```
+cd react-redux-realworld-example-app
+npm install
+npm run start
+```
+* Create a free account and/or login with github on <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from thinkster.io</a>
+
+---
+### Lab: Learn the Fundamentals of Redux
+* Do the first `thinkster` lab <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux">Lab: Learn the Fundamentals of Redux</a>
+* Optionally you can create your own git branch to save your labs. From a new terminal or powershell:
+```
+cd react-redux-realworld-example-app
+git branch mylabs00start
+git checkout mylabs00start
+git commit -am "starting point for labs"
+git checkout -b mylabs01reduxtodos
+git branch
+```
+* Add Redux store with `createStore()`
+* Add DevTools to `createStore()` as on the previous page:
+
+For a basic Redux store simply add:            
+```JavaScript
+ const store = createStore(
+   reducer, /* preloadedState, */
+   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+ );
+```
+
+---
+### Lab: Displaying the State
+<a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/displaying-the-state">Lab: Displaying the State<a>
+* Subsribe the store to React's `setState()`
+* Display checkbox tied to state
+* <a target="_reduxsolutions" href="./redux-solutions/mars01todos">Lab Solution Online</a>
+
+Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
+```
+git commit -am "Added redux store, reducer, and dispatch to todos checkbox"
+git diff -b mylabs00start
+git checkout -b mylabs02conduit
+```
+---
+### Lab: Using react-redux to Develop Conduit Site
+<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">Setting up react-redux</a>
+* Remember to remove App component from index.js
+* Add components folder to src and create App.js in  `src/components/App.js`
+* Building Conduit Site and adding `react-redux` Provider
+* Subscribing to Redux Store with `store.subscribe()`
+* Dispatching Actions with `store.dispatch()`
+* Using `mapStateToProps()` and `react-redux connect()`
+* <a target="_reduxsolutions" href="./redux-solutions/mars02conduit">Lab Solution Online</a>
+
+
+Optionally when you're done:
+```
+git commit -am "Started Conduit site with react-redux"
+git diff -b mylabs01reduxtodos
+git checkout -b mylabs03conduitloading
+```
+---
+### Lab: Redux with Multiple Components
+<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">Communicating Across Multiple Components</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
+
+Optionally when you're done:
+```
+git commit -am "Added comm across multiple components to loading..."
+git diff -b mylabs02conduit
+git checkout -b mylabs04conduitfeed
+```
+---
+### Lab: Communicating Across Multiple Components and AJAX Calls
+<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/react-redux-ajax-middleware">AJAX Middleware</a>
+* Making AJAX calls with `superagent` HTTP client library to lead conduit data feed
+* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
+
+---
+### Lab: Loading Data Feed
+<a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/creating-promise-middleware">Creating Promise Middleware</a>
+* Using Middleware, `Promise`, and `mapDispatchToProps` to dispatch actions asynchronously
+<a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
+* Update `reducer` to handle `action HOME_PAGE_LOADED`
+* Build `ArticlePreview` component
+* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitfeed">Lab Solution Online</a>
+
+Optionally when you're done:
+```
+git commit -am "Loaded data feed and dispatched actions"
+git diff -b mylabs03conduitloading
+git checkout -b mylabs05router
+git branch
+```
+---
+### Routing in React
+* <a target="_ref" href="https://medium.com/@thejasonfile/basic-intro-to-react-router-v4-a08ae1ba5c42">Intro to React Router v4</a>
+
+---
+### Lab: Adding React Router
+<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">React Router</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars04router">Lab Solution Online</a>
+
+Optionally, when you're done:
+```
+git commit -am "Added react-router Links"
+git diff -b mylabs04conduitfeed
+git branch
+```
+---
+### More Advanced Training Available from Thinkster.io
+* <a target="_thinkster" href="https://thinkster.io/topics/react">Advanced React and Redux Online Training (need PRO subscription)</a>
+
+* More Advanced Online Training Available on <a target="_ref" href="https://thinkster.io/">thinkster.io</a>
+
+---
+### React Redux Tutorial: Learning Redux in 2018
+
+<a target="_ref" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/">React Redux Tutorial for Beginners: learning Redux in 2018</a> by Valentino Gagliardi
+
+---
+### Optional Lab: Catalog with React and Redux
+* Port your simple catalog in React to use Redux for state management
+* Previously, you modularized this code <a target="_ref" href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React Shopping https://reactjs.org/docs/thinking-in-react.html</a>
+* Refactor to use Redux 
+* Use Todo Redux example for inspiration <a target="_redux" href="https://github.com/sadams/todo-redux-react-webpack">https://github.com/sadams/todo-redux-react-webpack</a>
+* See previous page for setup
+* Optional challenges: use your own test data for real shopping! 
+
+---
+### Free Course Videos from Dan Abramov
+#### Learn Redux from its creator:
+
+* <a target="_ref" href="https://egghead.io/series/getting-started-with-redux">Part 1: Getting Started with Redux (30 free videos)</a>
+
+* <a target="_ref" href="https://egghead.io/courses/building-react-applications-with-idiomatic-redux">Part 2: Building React Applications with Idiomatic Redux (27 free videos)</a>
+
+* <a target="_ref" href="https://github.com/tayiorbeii/egghead.io_redux_course_notes">Redux Course Notes</a>
+
+---
+### More React and Redux Learning Resources
+
+* <a target="_ref" href="https://www.fullstackreact.com/30-days-of-react/">FullStack React 30 Days of React and Redux</a>
+
+* <a target="_ref" href="https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/">React Tutorial: Cloning Yelp</a>
+
+* <a target="_ref" href="http://cabin.getstream.io/">Learn React & Redux With Cabin</a>
+
+* <a target="_ref" href="https://survivejs.com/react/introduction/">Survive JS - Webpack and React Book</a>
+
+* <a target="_ref" href="https://github.com/ReactTraining/react-router">https://github.com/ReactTraining/react-router</a>
+
+* <a target="_ref" href="https://github.com/reactjs/react-router-tutorial">react-router tutorial https://github.com/reactjs/react-router-tutorial</a>
+
+---
+### Redux Video Course by Wes Bos
+
+* <a target="_ref" href="https://courses.wesbos.com/account/access/5a34aee80e25892227e21408">Wes Bos Redux Video Course</a>
+
+* <a target="_ref" href="https://medium.com/netscape/my-recommended-free-resources-to-learn-react-68f4d20a8dc1">Free Resources to Learn React</a>
+* <a target="_ref" href="https://livebook.manning.com/#!/book/react-quickly/">React Quickly book by Azat Mardan</a>
+* <a target="_ref" href="https://livebook.manning.com/#!/book/react-quickly/chapter-9">React Quickly Free Chapter Menu Project</a>
+
+* <a target="_ref" href="https://egghead.io/series/getting-started-with-redux">Part 1: Getting Started with Redux (30 free videos)</a>
+
+* <a target="_ref" href="https://egghead.io/courses/building-react-applications-with-idiomatic-redux"> Part 2: Building React Applications with Idiomatic Redux (27 free videos)</a>
+
+---
+### Tools
+* <a target="_ref" href="https://codesandbox.io/s/62zvqom7kk">Code Sandbox</a>
+
+* <a target="_ref" href="https://csb-62zvqom7kk-janthncuwn.now.sh">Zeit for deployment</a>
+
+* <a target="_ref" href="http://jsbin.com/mipesawapi/edit?js,output">JS Bin Online Editor</a>
+
+---
+### Github Tutorial
+* <a target="_ref" href="http://kbroman.org/github_tutorial/pages/init.html">Github tutorial</a>
+
+---
+### Routing with Backbone and React
+* React Quickly has a Backbone routing example in Ch. 13
+* <a target="_ref" href="https://github.com/azat-co/react-quickly/tree/master/ch13">https://github.com/azat-co/react-quickly/tree/master/ch13</a>
+
+---
+### Backbone router to render React components by doing the following:
+* Defining a router class with the routes object as a mapping from URL fragments to functions
+* Rendering React elements in the methods/functions of the Backbone Router class
+* Instantiating and starting the Backbone the Router object
+
+---
+### React Native Intro
+<a target="_ref" href="https://www.slideshare.net/ModusJesus/intro-to-react-native">Intro to React Native</a>
+
+---
+### Resources to learn more
+* <a target="_ref" href="http://reactquickly.co/demos">http://reactquickly.co/demos</a>
+* <a target="_ref" href=" ">Review React Foundation Course Videos from Azat Mardan</a>
+<a target="_react-quickly" href="https://livebook.manning.com/#!/book/react-quickly">React Quickly Book by Azat Mardan: Livebook</a>
+* <a target="_ref" href=" ">React Quickly Summaries</a>
+
+---
+### Testing React Components
+
+<a target="_ref" href="https://facebook.github.io/jest/docs/en/tutorial-react.html">Facebook Tutorial:  Testing React Components with Jest</a>
+
+<a target="_ref" href="http://www.softwareishard.com/blog/testing/modern-react-component-testing-with-create-react-app-jest-and-enzyme/">Modern React Component Testing with create-react-app, Jest, and Enzyme</a>
+
+---
+### Testing Redux Reducers and More with Jest
+
+<a target="_ref" href="https://hackernoon.com/redux-testing-step-by-step-a-simple-methodology-for-testing-business-logic-8901670756ce">Redux Testing Step by Step: A Simple Methodology for Testing Business Logic</a>
+
+---
+### Optional Homework
+<a target="_ref" href="mongolab/">Optional Homework: Final AutoComplete Project in React Foundation</a>
+
+---
+
+### React and Redux Resources
+
+* <a target="_ref" href="https://www.robinwieruch.de/tips-to-learn-react-redux/">Tips to learn React + Redux in 2018</a>
+
+---
+### Course Review
+#### Course Objectives
+<input type="checkbox">  Describe React and the problem it solves
+<br><input type="checkbox">  Explore the basic architecture of a React component
+<br><input type="checkbox">  Gain a deep knowledge of React components and JSX
+<br><input type="checkbox">  Learn how to manage application
+state with Flux and Redux
+
+---
+#### Topics Review
+
+| React Training | Redux & React + React Router |
+| ------- | ------- |
+| <input type="checkbox">  Intro to React | <input type="checkbox">  Uncontrolled Components |
+| <input type="checkbox">  React vs other libraries | <input type="checkbox">  Component Life-Cycle  |
+| <input type="checkbox">  Virtual DOM  | <input type="checkbox">  Forms |
+| <input type="checkbox">  JSX | <input type="checkbox">  Building Apps |
+| <input type="checkbox">  Precompiled JSX | <input type="checkbox">   Introduction to Flux
+| <input type="checkbox">  Properties & State | <input type="checkbox">  Introduction to Redux |
+| <input type="checkbox">  Reusable Components  | <input type="checkbox">  Related React Tools |
+| <input type="checkbox">  Compositions | <input type="checkbox">  React Router |
+| <input type="checkbox">  Events | <input type="checkbox">  Testing React Components |
+| <input type="checkbox">  Controlled Components| <input type="checkbox">  Testing Redux Reducers |
+
+---
+
+#### PluralSight React Skills Assessment
+15 minute test of your proficiency in React.  Should be able to take once with 1 redo.
+
+<a target="_ref" href="https://www.pluralsight.com/paths/react">https://www.pluralsight.com/paths/react</a>
+
+---
+### Congratulations, you are now all React and Redux Developers!
+
+<a target="_di" href="http://developintelligence.com"><img src="http://www.developintelligence.com/sites/all/themes/diresponsive/images/Develop-Intelligence-logo-f.png">
+</a>
+<br>
+<a target="_git_react" href="https://davidmarsland.github.io/react-spike/">https://davidmarsland.github.io/react-spike/</a>
+### Thanks, please fill out course eval now, your comments are greatly appreciated!
+
