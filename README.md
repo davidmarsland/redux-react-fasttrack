@@ -155,6 +155,14 @@ Web Development since the Dawn of the Web <br>
 State Management with React and Redux</a>
 
 ---
+### Redux can be described in three fundamental principles:
+* Single source of truth. The state of your whole application is stored in an object tree within a single store.
+* State is read-only. The only way to change the state is to emit an action, an object describing what happened. 
+* Changes are made with pure functions.
+
+<a target="_ref" href="https://github.com/reactjs/redux/blob/master/docs/introduction/ThreePrinciples.md">Three Principles of Redux</a>
+
+---
 ### Redux Example and Lab
 <a target="_ref" href="https://csb-62zvqom7kk-janthncuwn.now.sh/">
 Redux Example Incrementer</a>
