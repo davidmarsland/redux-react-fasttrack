@@ -53,6 +53,7 @@
 * Integrating React Router with React/Redux
 * Configuring Paths
 * Working with URL Parameters
+* Testing Redux Reducers
 
 ---
 ### Lab Setup
@@ -122,6 +123,8 @@ Jetbrains IDEs, either WebStorm or IntelliJ.
 * Create React App simplifies setup 
 * <a target="_ref" href="https://www.kirupa.com/react/setting_up_react_environment.htm">https://www.kirupa.com/react/setting_up_react_environment.htm</a>
 * <a target="_ref" href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md">Create React App Docs</a>
+
+ We'll do more setup in class as needed
 
 ---
 ### Introducing your instructor, David Marsland
@@ -330,8 +333,6 @@ git branch
 ---
 ### React Redux Tutorial Labs
 
-<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_the_Redux_store">React Redux tutorial: getting to know the Redux store</a>
-
  Starting from `redux-fasttrack` directory:
  ```
  git clone https://github.com/valentinogagliardi/webpack-4-quickstart.git
@@ -349,6 +350,11 @@ git checkout -b 01store
 git branch
 npm install
 ```
+
+---
+### React Redux tutorial: getting to know the Redux store
+
+Do the steps in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_the_Redux_store">React Redux tutorial: getting to know the Redux store</a>
 
 Add `__REDUX_DEVTOOLS_EXTENSION__` to `createStore()`:
 
@@ -374,7 +380,7 @@ git checkout -b 02reducer
 ### React Redux tutorial: getting to know Redux reducers
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_reducers">React Redux tutorial: getting to know Redux reducers</a>
 
-To see the store in Redux DevTools at this point,
+After adding 'src/js/reducers/index.js' following the tutorial, do this to see the store in Redux DevTools:
 
 Add this to `src/App.js`
 ```js
@@ -385,35 +391,41 @@ In a new terminal or powershell starting from `redux-fasttrack`
 cd webpack-4-quickstart
 npm run start
 ```
-Lab: Your redux app should finally run. 
+Your redux app should finally run. Open DevTools and in Redux DevTools you should see State in the Store but it won't respond to Actions yet. 
 
+Optionally:
 ```
 git branch
+git add .
+git commit -am "Added reducer"
+git diff -b 01store
 ```
-Should output
-```
-  00start
-  01store
-* 02reducer
-  master
-```
-<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_refactoring_the_reducer">React Redux tutorial: refactoring the reducer</a>
 
 ---
 ### React Redux tutorial: getting to know Redux actions
 
-<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_actions">React Redux tutorial: getting to know Redux actions</a>
+Optionally:
+```
+git checkout -b 03actions
+```
+Do the steps in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_actions">React Redux tutorial: getting to know Redux actions</a>
 
+Optionally:
+```
+git branch
+git add .
+git commit -am "Added actions and constants"
+git diff -b 02reducer
+```
 ---
 ### React Redux tutorial: Redux store methods
-<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a>
+Optionally:
+```
+git checkout -b 03actions
+```
+Do the first steps in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a> creating `src/js/index.js` and modifying `src/index.js`
 
-In a new terminal or powershell starting from `redux-fasttrack` 
-```
-cd webpack-4-quickstart
-npm run start
-```
-Lab: Your redux app should finally run. 
+Lab: Your redux app should run, but you won't see output. We're going to go under the hood in the console. 
 
 Follow the instructions in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a> to interact with redux store in the console. 
 
@@ -470,7 +482,7 @@ Optionally when you're done you can commit your work and diff, then create and c
 git branch
 git add .
 git commit -am  "added List and Form and put inside Provider"
-git diff -b 03storemethods
+git diff -b 04storemethods
 ```
 
 ---
@@ -602,13 +614,7 @@ git diff -b 03storemethods
 <br><input type="checkbox">  Integrating React Router with React/Redux
 <br><input type="checkbox">  Configuring Paths
 <br><input type="checkbox">  Working with URL Parameters
-
-#### Course Objectives
-<input type="checkbox">  Describe React and the problem it solves
-<br><input type="checkbox">  Explore the basic architecture of a React component
-<br><input type="checkbox">  Gain a deep knowledge of React components and JSX
-<br><input type="checkbox">  Learn how to manage application
-state with Flux and Redux
+<br><input type="checkbox">  Testing Redux Reducers
 
 ---
 ### Congratulations, you are now all React and Redux Developers!
