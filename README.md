@@ -11,7 +11,13 @@
 
 ---
 ### FastTrack to Redux with React Training
-**FastTrack to Redux with React Training** ​teaches students how to use two important React-related libraries: Redux and React Router. Building upon the solid foundation of Flux principles, Redux is explained and demonstrated as it related to Flux and React. Additionally, routing with React Router is explored and integrated with Redux. Utilizing best practices, students build a real application from scratch utilizing the more import aspects of React, Redux and React Router.
+**FastTrack to Redux with React Training** ​teaches students how to use two important React-related libraries: Redux and React Router.
+
+ Building upon the solid foundation of Flux principles, Redux is explained and demonstrated as it related to Flux and React. 
+ 
+ Additionally, routing with React Router is explored and integrated with Redux. 
+ 
+ Utilizing best practices, students build a real application from scratch utilizing the more import aspects of React, Redux and React Router.
 
 * Prerequisites: Advanced JavaScript ES6 and React Development Experience
 
@@ -127,8 +133,6 @@ Web Development since the Dawn of the Web <br>
 * DevelopIntelligence Senior Technical Instructor 2017-
 
 ---
-
----
 ### Flux
 <a target="_ref" href="http://facebook.github.io/flux/docs/in-depth-overview.html#content">Flux from Facebook
 
@@ -138,7 +142,6 @@ Web Development since the Dawn of the Web <br>
 
 <a target="_ref" href="http://blog.isquaredsoftware.com/presentations/2017-02-react-redux-intro/#/33">
 State Management with React and Redux</a>
-
 
 ---
 ### Redux Example and Lab
@@ -165,8 +168,13 @@ For a basic Redux store simply add:
 
 ### Redux Todo Example App from Redux Course 
 * <a target="_redux" href="https://github.com/sadams/todo-redux-react-webpack">https://github.com/sadams/todo-redux-react-webpack</a>
-* Clone repo, then:
+
+* Make a directory `redux-fastrack` where you want to save the course labs
 ```
+cd redux-fasttrack
+```
+```
+git clone https://github.com/sadams/todo-redux-react-webpack.git
 npm install
 npm run start
 ```
@@ -178,6 +186,8 @@ npm run start
 
 * <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from thinkster.io</a>
 <br>Note, to do the labs you will have to change git commands similar to this:
+
+Starting from `redux-fasttrack` directory:
 ```
 git clone -b 00 https://github.com/gothinkster/react-redux-realworld-example-app.git
 ```
@@ -192,7 +202,9 @@ npm run start
 ---
 ### Lab: Learn the Fundamentals of Redux
 * Do the first `thinkster` lab <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux">Lab: Learn the Fundamentals of Redux</a>
-* Optionally you can create your own git branch to save your labs. From a new terminal or powershell:
+
+* Optionally you can create your own git branches to save key steps of your labs. 
+  From a new terminal or powershell:
 ```
 cd react-redux-realworld-example-app
 git branch mylabs00start
@@ -221,6 +233,7 @@ For a basic Redux store simply add:
 
 Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
 ```
+git branch
 git commit -am "Added redux store, reducer, and dispatch to todos checkbox"
 git diff -b mylabs00start
 git checkout -b mylabs02conduit
@@ -300,7 +313,123 @@ git branch
 ---
 ### React Redux Tutorial: Learning Redux in 2018
 
-<a target="_ref" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/">React Redux Tutorial for Beginners: learning Redux in 2018</a> by Valentino Gagliardi
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/">Excellen React Redux Tutorial for Beginners: learning Redux in 2018</a> by Valentino Gagliardi
+
+---
+### React Redux Tutorial Labs
+
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_the_Redux_store">React Redux tutorial: getting to know the Redux store</a>
+
+ Starting from `redux-fasttrack` directory:
+ ```
+ git clone https://github.com/valentinogagliardi/webpack-4-quickstart.git
+
+ cd webpack-4-quickstart
+ ```
+ Optionally you can create your own git branch to save your labs. From a new terminal or powershell:
+```
+git branch 00start
+git checkout 00start
+git commit -am "starting point for labs"
+git checkout -b 01store
+git branch
+npm install
+```
+
+ In a new terminal or powershell starting from `redux-fasttrack` directory launch a dev server:
+```
+cd redux
+cd webpack-4-quickstart
+npm run start
+```
+
+* Add `__REDUX_DEVTOOLS_EXTENSION__` to `createStore()`:
+
+For a basic Redux store simply add:            
+```JavaScript
+ const store = createStore(
+   reducer, /* preloadedState, */
+   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+ );
+```
+
+Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
+```
+git branch
+git commit -am "Added redux store"
+git diff -b 00start
+git checkout -b 02reducer
+```
+
+---
+### React Redux tutorial: getting to know Redux reducers
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_reducers">React Redux tutorial: getting to know Redux reducers</a>
+
+```
+git branch
+```
+Should output
+```
+  00start
+  01store
+* 02reducer
+  master
+```
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_refactoring_the_reducer">React Redux tutorial: refactoring the reducer</a>
+
+---
+### React Redux tutorial: getting to know Redux actions
+
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_actions">React Redux tutorial: getting to know Redux actions</a>
+
+---
+### React Redux tutorial: Redux store methods
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a>
+
+* Lab: Your redux app finally runs with no visible output.  Follow the instructions above to:
+
+---
+### React Redux tutorial: connecting React with Redux
+
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_connecting_React_with_Redux">React Redux tutorial: connecting React with Redux</a>
+Now you should know how to do all this with a `store`:
+* access the current state with `getState()`.
+
+* dispatch an action with `dispatch()`
+
+* listen for state changes with `subscribe()`
+
+Now we need to connect React and Redux with `react-redux`
+```
+npm i react-redux --save-dev
+```
+* `the mapStateToProps()` connects part of the Redux state to props
+* `mapDispatchToProps()` connects Redux actions to React props
+
+---
+### React Redux tutorial: App component and Redux store
+
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_App_component_and_Redux_store">React Redux tutorial: App component and Redux store</a>
+
+---
+### React Redux tutorial: List component and Redux state
+
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_List_component_and_Redux_state">React Redux tutorial: List component and Redux state</a>
+
+---
+### React Redux tutorial: Form component and Redux actions
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Form_component_and_Redux_actions">React Redux tutorial: Form component and Redux actions</a>
+
+---
+### React Redux tutorial: wrapping up
+<a target="_valentinog" href="">React Redux tutorial: wrapping up</a>
+
+Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
+```
+git branch
+git commit -am  "added List and Form and put inside Provider"
+git diff -b 03storemethods
+```
 
 ---
 ### Optional Lab: Catalog with React and Redux
@@ -407,35 +536,37 @@ git branch
 
 ---
 ### Course Review
+### Course Objectives
+<input type="checkbox">  Describe Redux and the problem it solves
+<br><input type="checkbox">  Configure a React and Redux development environment
+<br><input type="checkbox">  Explore the basic architecture of a React Redux application
+<br><input type="checkbox">  Develop applications using React and Redux
+
+---
+### Course Outline and Topics
+
+<br><input type="checkbox">  Flux & Redux Overview
+<br><input type="checkbox">  Three Principles of Redux
+<br><input type="checkbox">  Immutable Programming
+<br><input type="checkbox">  Configuring Actions
+<br><input type="checkbox">  Creating Reducer Functions
+<br><input type="checkbox">  Working with Stores
+<br><input type="checkbox">  Combining Reducers
+<br><input type="checkbox">  Integrating with React
+<br><input type="checkbox">  Middleware Overview
+<br><input type="checkbox">  Creating Custom Middleware
+<br><input type="checkbox">  React-Thunk and Asynchronous Actions
+<br><input type="checkbox">  Creating Containers with React-Redux
+<br><input type="checkbox">  Integrating React Router with React/Redux
+<br><input type="checkbox">  Configuring Paths
+<br><input type="checkbox">  Working with URL Parameters
+
 #### Course Objectives
 <input type="checkbox">  Describe React and the problem it solves
 <br><input type="checkbox">  Explore the basic architecture of a React component
 <br><input type="checkbox">  Gain a deep knowledge of React components and JSX
 <br><input type="checkbox">  Learn how to manage application
 state with Flux and Redux
-
----
-#### Topics Review
-
-| React Training | Redux & React + React Router |
-| ------- | ------- |
-| <input type="checkbox">  Intro to React | <input type="checkbox">  Uncontrolled Components |
-| <input type="checkbox">  React vs other libraries | <input type="checkbox">  Component Life-Cycle  |
-| <input type="checkbox">  Virtual DOM  | <input type="checkbox">  Forms |
-| <input type="checkbox">  JSX | <input type="checkbox">  Building Apps |
-| <input type="checkbox">  Precompiled JSX | <input type="checkbox">   Introduction to Flux
-| <input type="checkbox">  Properties & State | <input type="checkbox">  Introduction to Redux |
-| <input type="checkbox">  Reusable Components  | <input type="checkbox">  Related React Tools |
-| <input type="checkbox">  Compositions | <input type="checkbox">  React Router |
-| <input type="checkbox">  Events | <input type="checkbox">  Testing React Components |
-| <input type="checkbox">  Controlled Components| <input type="checkbox">  Testing Redux Reducers |
-
----
-
-#### PluralSight React Skills Assessment
-15 minute test of your proficiency in React.  Should be able to take once with 1 redo.
-
-<a target="_ref" href="https://www.pluralsight.com/paths/react">https://www.pluralsight.com/paths/react</a>
 
 ---
 ### Congratulations, you are now all React and Redux Developers!
