@@ -94,7 +94,15 @@ npx install -g eslint
 ```
   <a target="_ref" href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">Fixing NPM Permissions on Mac or Linux</a>
 
-We'll do more setup in class as needed.
+---
+#### Ensure that you have `git` installed
+In a terminal, powershell, or cmd prompt:
+```
+git --version
+```
+Should be greater than 2.0
+
+#### If needed, install `git` from <a target="_setup" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
 
 ---
 ### For this course you'll need either a Text Editor or an IDE.
@@ -160,7 +168,8 @@ For a basic Redux store simply add:
 ```JavaScript
  const store = createStore(
    reducer, /* preloadedState, */
-+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+   window.__REDUX_DEVTOOLS_EXTENSION__ &&
+     window.__REDUX_DEVTOOLS_EXTENSION__()
  );
 ```
 
@@ -169,17 +178,14 @@ For a basic Redux store simply add:
 ### Redux Todo Example App from Redux Course 
 * <a target="_redux" href="https://github.com/sadams/todo-redux-react-webpack">https://github.com/sadams/todo-redux-react-webpack</a>
 
-* Make a directory `redux-fastrack` where you want to save the course labs
+* Make a directory `redux-fasttrack` where you want to save the course labs
 ```
-cd redux-fasttrack
+cd redux-fastrack
 ```
 ```
 git clone https://github.com/sadams/todo-redux-react-webpack.git
 npm install
-npm run start
 ```
-* Launches on localhost:8080 by default.
-
 ---
 ### Redux Labs
 
@@ -228,7 +234,7 @@ For a basic Redux store simply add:
 ---
 ### Lab: Displaying the State
 <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/displaying-the-state">Lab: Displaying the State<a>
-* Subsribe the store to React's `setState()`
+* Subscribe the store to React's `setState()`
 * Display checkbox tied to state
 * <a target="_reduxsolutions" href="./redux-solutions/mars01todos">Lab Solution Online</a>
 
@@ -355,7 +361,8 @@ For a basic Redux store simply add:
 ```JavaScript
  const store = createStore(
    reducer, /* preloadedState, */
-   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+   window.__REDUX_DEVTOOLS_EXTENSION__ &&       
+     window.__REDUX_DEVTOOLS_EXTENSION__()
  );
 ```
 
@@ -426,6 +433,19 @@ npm i react-redux --save-dev
 ### React Redux tutorial: Form component and Redux actions
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Form_component_and_Redux_actions">React Redux tutorial: Form component and Redux actions</a>
 
+To get bootstrap styles like `col-md-4` to work, add:
+
+```JavaScript
+// src/js/index.js
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+Then stop the server and:
+```
+npm i bootstrap –save-dev
+npm run start
+```
 ---
 ### React Redux tutorial: wrapping up
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_wrapping_up">React Redux tutorial: wrapping up</a>
