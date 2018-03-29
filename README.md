@@ -2,9 +2,9 @@
 ### Welcome to FastTrack to Redux with React Training
 
 #### Instructor: David Marsland
-<br>
-#### Macy's SF Schedule: 4/5-4/6/2018 9:30am – 4:30pm
 
+#### Macy's SF Schedule: 4/5-4/6/2018 9:30am – 4:30pm
+<br>
 <img src="http://www.developintelligence.com/sites/all/themes/diresponsive/images/Develop-Intelligence-logo-f.png">
 <br>
 <a target="_di" href="http://developintelligence.com">DevelopIntelligence.com</a>
