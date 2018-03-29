@@ -338,6 +338,8 @@ git branch
 
  cd webpack-4-quickstart
  ```
+ **Do not remove** the file ./src/App.js
+
  Optionally you can create your own git branch to save your labs. From a new terminal or powershell:
 ```
 git branch 00start
@@ -348,14 +350,7 @@ git branch
 npm install
 ```
 
- In a new terminal or powershell starting from `redux-fasttrack` directory launch a dev server:
-```
-cd redux
-cd webpack-4-quickstart
-npm run start
-```
-
-* Add `__REDUX_DEVTOOLS_EXTENSION__` to `createStore()`:
+Add `__REDUX_DEVTOOLS_EXTENSION__` to `createStore()`:
 
 For a basic Redux store simply add:            
 ```JavaScript
@@ -379,6 +374,19 @@ git checkout -b 02reducer
 ### React Redux tutorial: getting to know Redux reducers
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_reducers">React Redux tutorial: getting to know Redux reducers</a>
 
+To see the store in Redux DevTools at this point,
+
+Add this to `src/App.js`
+```js
+import store from "./js/store";
+```
+In a new terminal or powershell starting from `redux-fasttrack` 
+```
+cd webpack-4-quickstart
+npm run start
+```
+Lab: Your redux app should finally run. 
+
 ```
 git branch
 ```
@@ -400,7 +408,14 @@ Should output
 ### React Redux tutorial: Redux store methods
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a>
 
-* Lab: Your redux app finally runs with no visible output.  Follow the instructions above to interact with redux store in the console
+In a new terminal or powershell starting from `redux-fasttrack` 
+```
+cd webpack-4-quickstart
+npm run start
+```
+Lab: Your redux app should finally run. 
+
+Follow the instructions in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a> to interact with redux store in the console. 
 
 Now you should know how to do all this with a `store`:
 * access the current state with `getState()`.
