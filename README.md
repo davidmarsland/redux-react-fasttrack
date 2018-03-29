@@ -334,6 +334,12 @@ git branch
 * More Advanced Online Training Available on <a target="_ref" href="https://thinkster.io/">thinkster.io</a>
 
 ---
+### Mid-class Survey
+
+Please let us know how class is going for you with this mid-class survey.  Comments are greatly appreciated!
+#### <a target="_ref" href="http://bit.ly/react4-3-18">http://bit.ly/redux4-5-18</a>
+
+---
 ### React Redux Tutorial: Learning Redux in 2018
 
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/">Excellent React Redux Tutorial for Beginners: learning Redux in 2018</a> by Valentino Gagliardi
@@ -632,4 +638,5 @@ git diff -b 04storemethods
 <br>
 <a target="_git_react" href="https://davidmarsland.github.io/react-spike/">https://davidmarsland.github.io/react-spike/</a>
 ### Thanks, please fill out course eval now, your comments are greatly appreciated!
+#### <a target="_ref" href="https://www.surveymonkey.com/r/KHSXLM8">https://www.surveymonkey.com/r/KHSXLM8</a>
 
