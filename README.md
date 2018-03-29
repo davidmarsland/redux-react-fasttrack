@@ -232,6 +232,7 @@ git add .
 git commit -am "starting point for labs"
 git checkout -b mylabs01reduxtodos
 git branch
+git status
 ```
 * Add Redux store with `createStore()`
 * Add DevTools to `createStore()` as on the previous page:
@@ -251,17 +252,25 @@ For a basic Redux store simply add:
 * Display checkbox tied to state
 * <a target="_reduxsolutions" href="./redux-solutions/mars01todos">Lab Solution Online</a>
 
-Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
+Optional: when you're done you can commit your work and diff
 ```
 git branch
 git add .
 git commit -am "Added redux store, reducer, and dispatch to todos checkbox"
 git diff -b mylabs00start
+Optional: create and checkout a new branch for the next lab
+```
+```
 git checkout -b mylabs02conduit
 ```
 ---
 ### Lab: Using react-redux to Develop Conduit Site
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">Setting up react-redux</a>
+
+Optional: create and checkout a new branch for the next lab
+```
+git checkout -b mylabs02conduit
+```
 * Remember to remove App component from index.js
 * Add components folder to src and create App.js in  `src/components/App.js`
 * Building Conduit Site and adding `react-redux` Provider
@@ -271,24 +280,26 @@ git checkout -b mylabs02conduit
 * <a target="_reduxsolutions" href="./redux-solutions/mars02conduit">Lab Solution Online</a>
 
 
-Optionally when you're done:
+Optional:
 ```
 git add .
 git commit -am "Started Conduit site with react-redux"
 git diff -b mylabs01reduxtodos
-git checkout -b mylabs03conduitloading
 ```
 ---
 ### Lab: Redux with Multiple Components
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">Communicating Across Multiple Components</a>
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
 
-Optionally when you're done:
+Optional: before you start coding:
+```
+git checkout -b mylabs03conduitloading
+```
+Optional: when you're done with the lab
 ```
 git add .
 git commit -am "Added comm across multiple components to loading..."
 git diff -b mylabs02conduit
-git checkout -b mylabs04conduitfeed
 ```
 ---
 ### Lab: Communicating Across Multiple Components and AJAX Calls
@@ -298,6 +309,9 @@ git checkout -b mylabs04conduitfeed
 
 ---
 ### Lab: Loading Data Feed
+```
+git checkout -b mylabs04conduitfeed
+```
 <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/creating-promise-middleware">Creating Promise Middleware</a>
 * Using Middleware, `Promise`, and `mapDispatchToProps` to dispatch actions asynchronously
 <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
@@ -305,13 +319,11 @@ git checkout -b mylabs04conduitfeed
 * Build `ArticlePreview` component
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitfeed">Lab Solution Online</a>
 
-Optionally when you're done:
+Optional:
 ```
 git add .
 git commit -am "Loaded data feed and dispatched actions"
 git diff -b mylabs03conduitloading
-git checkout -b mylabs05router
-git branch
 ```
 ---
 ### Routing in React
@@ -319,6 +331,9 @@ git branch
 
 ---
 ### Lab: Adding React Router
+```
+git checkout -b mylabs05router
+```
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">React Router</a>
 * <a target="_reduxsolutions" href="./redux-solutions/mars04router">Lab Solution Online</a>
 
@@ -420,13 +435,11 @@ git diff -b 01store
 ---
 ### React Redux tutorial: getting to know Redux actions
 
-Optionally:
 ```
 git checkout -b 03actions
 ```
 Do the steps in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_getting_to_know_Redux_actions">React Redux tutorial: getting to know Redux actions</a>
 
-Optionally:
 ```
 git branch
 git add .
@@ -435,9 +448,9 @@ git diff -b 02reducer
 ```
 ---
 ### React Redux tutorial: Redux store methods
-Optionally:
+
 ```
-git checkout -b 03actions
+git checkout -b 04storemethods
 ```
 Do the first steps in <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a> creating `src/js/index.js` and modifying `src/index.js`
 
@@ -450,11 +463,19 @@ Now you should know how to do all this with a `store`:
 * dispatch an action with `dispatch()`
 * listen for state changes with `subscribe()`
 
+```
+git branch
+git add .
+git commit -am "Create src/js/index.js, mod src/index.js to expose store and action creator addArticle"
+git diff -b 03actions
+```
 ---
 ### React Redux tutorial: connecting React with Redux
 
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_connecting_React_with_Redux">React Redux tutorial: connecting React with Redux</a>
-
+```
+git checkout -b 05reactredux
+```
 Now we need to connect React and Redux with `react-redux`
 ```
 npm i react-redux --save-dev
@@ -476,7 +497,18 @@ npm i react-redux --save-dev
 ### React Redux tutorial: Form component and Redux actions
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Form_component_and_Redux_actions">React Redux tutorial: Form component and Redux actions</a>
 
-To get bootstrap styles like `col-md-4` to work, add:
+```
+git branch
+git add .
+git commit -am "Add react-redux connect, use Provider"
+git diff -b 04storemethods
+```
+
+```
+git checkout -b 04storemethods
+```
+
+#### To get bootstrap styles like `col-md-4` to work, add:
 
 ```javascript
 // src/js/index.js
