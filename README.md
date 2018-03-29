@@ -209,6 +209,7 @@ npm run start
 cd react-redux-realworld-example-app
 git branch mylabs00start
 git checkout mylabs00start
+git add .
 git commit -am "starting point for labs"
 git checkout -b mylabs01reduxtodos
 git branch
@@ -234,6 +235,7 @@ For a basic Redux store simply add:
 Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
 ```
 git branch
+git add .
 git commit -am "Added redux store, reducer, and dispatch to todos checkbox"
 git diff -b mylabs00start
 git checkout -b mylabs02conduit
@@ -252,6 +254,7 @@ git checkout -b mylabs02conduit
 
 Optionally when you're done:
 ```
+git add .
 git commit -am "Started Conduit site with react-redux"
 git diff -b mylabs01reduxtodos
 git checkout -b mylabs03conduitloading
@@ -263,6 +266,7 @@ git checkout -b mylabs03conduitloading
 
 Optionally when you're done:
 ```
+git add .
 git commit -am "Added comm across multiple components to loading..."
 git diff -b mylabs02conduit
 git checkout -b mylabs04conduitfeed
@@ -284,6 +288,7 @@ git checkout -b mylabs04conduitfeed
 
 Optionally when you're done:
 ```
+git add .
 git commit -am "Loaded data feed and dispatched actions"
 git diff -b mylabs03conduitloading
 git checkout -b mylabs05router
@@ -300,6 +305,7 @@ git branch
 
 Optionally, when you're done:
 ```
+git add .
 git commit -am "Added react-router Links"
 git diff -b mylabs04conduitfeed
 git branch
@@ -313,7 +319,7 @@ git branch
 ---
 ### React Redux Tutorial: Learning Redux in 2018
 
-<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/">Excellen React Redux Tutorial for Beginners: learning Redux in 2018</a> by Valentino Gagliardi
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/">Excellent React Redux Tutorial for Beginners: learning Redux in 2018</a> by Valentino Gagliardi
 
 ---
 ### React Redux Tutorial Labs
@@ -356,6 +362,7 @@ For a basic Redux store simply add:
 Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
 ```
 git branch
+git add .
 git commit -am "Added redux store"
 git diff -b 00start
 git checkout -b 02reducer
@@ -386,18 +393,17 @@ Should output
 ### React Redux tutorial: Redux store methods
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_Redux_store_methods">React Redux tutorial: Redux store methods</a>
 
-* Lab: Your redux app finally runs with no visible output.  Follow the instructions above to:
+* Lab: Your redux app finally runs with no visible output.  Follow the instructions above to interact with redux store in the console
+
+Now you should know how to do all this with a `store`:
+* access the current state with `getState()`.
+* dispatch an action with `dispatch()`
+* listen for state changes with `subscribe()`
 
 ---
 ### React Redux tutorial: connecting React with Redux
 
 <a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_connecting_React_with_Redux">React Redux tutorial: connecting React with Redux</a>
-Now you should know how to do all this with a `store`:
-* access the current state with `getState()`.
-
-* dispatch an action with `dispatch()`
-
-* listen for state changes with `subscribe()`
 
 Now we need to connect React and Redux with `react-redux`
 ```
@@ -422,11 +428,12 @@ npm i react-redux --save-dev
 
 ---
 ### React Redux tutorial: wrapping up
-<a target="_valentinog" href="">React Redux tutorial: wrapping up</a>
+<a target="_valentinog" href="https://www.valentinog.com/blog/react-redux-tutorial-beginners/#React_Redux_tutorial_wrapping_up">React Redux tutorial: wrapping up</a>
 
 Optionally when you're done you can commit your work and diff, then create and checkout a new branch for the next lab. 
 ```
 git branch
+git add .
 git commit -am  "added List and Form and put inside Provider"
 git diff -b 03storemethods
 ```
