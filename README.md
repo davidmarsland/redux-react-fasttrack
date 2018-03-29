@@ -178,7 +178,7 @@ Note, you must add a line to source code to enable tooling.  Try this on a Redux
 <br>*No store found. Make sure to follow the <a target="_ref" href="https://github.com/zalmoxisus/redux-devtools-extension#usage">instructions</a>.*
 
 For a basic Redux store simply add:            
-```JavaScript
+```javascript
  const store = createStore(
    reducer, /* preloadedState, */
    window.__REDUX_DEVTOOLS_EXTENSION__ &&
@@ -237,7 +237,7 @@ git branch
 * Add DevTools to `createStore()` as on the previous page:
 
 For a basic Redux store simply add:            
-```JavaScript
+```javascript
  const store = createStore(
    reducer, /* preloadedState, */
    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -375,7 +375,7 @@ Do the steps in <a target="_valentinog" href="https://www.valentinog.com/blog/re
 Add `__REDUX_DEVTOOLS_EXTENSION__` to `createStore()`:
 
 For a basic Redux store simply add:            
-```JavaScript
+```javascript
  const store = createStore(
    reducer, /* preloadedState, */
    window.__REDUX_DEVTOOLS_EXTENSION__ &&       
@@ -478,7 +478,7 @@ npm i react-redux --save-dev
 
 To get bootstrap styles like `col-md-4` to work, add:
 
-```JavaScript
+```javascript
 // src/js/index.js
 
 import 'bootstrap/dist/css/bootstrap.min.css';
