@@ -335,7 +335,7 @@ const store = createStore(reducer, composeEnhancers(applyMiddleware(promiseMiddl
 * <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
 * Update `reducer` to handle `action HOME_PAGE_LOADED`
 * Build `ArticlePreview` component
-* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitfeed">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars03feed">Lab Solution Online</a>
 
 Optional:
 ```
