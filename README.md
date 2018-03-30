@@ -256,7 +256,7 @@ For a basic Redux store simply add:
 <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/displaying-the-state">Lab: Displaying the State<a>
 * Subscribe the store to React's `setState()`
 * Display checkbox tied to state
-* <a target="_reduxsolutions" href="./redux-solutions/mars01todos">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars01todos/">Lab Solution Online</a>
 
 Optional: when you're done you can commit your work and diff
 ```
@@ -280,7 +280,7 @@ git checkout -b mylabs02conduit
 * Subscribing to Redux Store with `store.subscribe()`
 * Dispatching Actions with `store.dispatch()`
 * Using `mapStateToProps()` and `react-redux connect()`
-* <a target="_reduxsolutions" href="./redux-solutions/mars02conduit">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars02conduit/">Lab Solution Online</a>
 
 
 Optional:
@@ -292,7 +292,7 @@ git diff -b mylabs01reduxtodos
 ---
 ### Lab: Redux with Multiple Components
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">Communicating Across Multiple Components</a>
-* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading/">Lab Solution Online</a>
 
 Optional: before you start coding:
 ```
@@ -308,7 +308,7 @@ git diff -b mylabs02conduit
 ### Lab: Communicating Across Components, Middleware, and AJAX Calls
 <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware">AJAX Middleware</a>
 * Making AJAX calls with `superagent` HTTP client library to lead conduit data feed
-* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading/">Lab Solution Online</a>
 
 ---
 ### Lab: Loading Data Feed
@@ -335,7 +335,7 @@ const store = createStore(reducer, composeEnhancers(applyMiddleware(promiseMiddl
 * <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
 * Update `reducer` to handle `action HOME_PAGE_LOADED`
 * Build `ArticlePreview` component
-* <a target="_reduxsolutions" href="./redux-solutions/mars03feed">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars03feed/">Lab Solution Online</a>
 
 Optional:
 ```
@@ -354,7 +354,7 @@ git diff -b mylabs03conduitloading
 git checkout -b mylabs05router
 ```
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">React Router</a>
-* <a target="_reduxsolutions" href="./redux-solutions/mars04router">Lab Solution Online</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars04router/">Lab Solution Online</a>
 
  To make the Redux DevTools work now, modify 
  `src/store.js`
