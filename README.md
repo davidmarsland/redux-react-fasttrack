@@ -199,6 +199,7 @@ cd redux-fastrack
 git clone https://github.com/sadams/todo-redux-react-webpack.git
 npm install
 ```
+
 ---
 ### Redux Labs
 
@@ -258,11 +259,8 @@ git branch
 git add .
 git commit -am "Added redux store, reducer, and dispatch to todos checkbox"
 git diff -b mylabs00start
-Optional: create and checkout a new branch for the next lab
 ```
-```
-git checkout -b mylabs02conduit
-```
+
 ---
 ### Lab: Using react-redux to Develop Conduit Site
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">Setting up react-redux</a>
