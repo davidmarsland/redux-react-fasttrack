@@ -301,7 +301,7 @@ git diff -b mylabs02conduit
 ```
 ---
 ### Lab: Communicating Across Multiple Components and AJAX Calls
-<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/react-redux-ajax-middleware">AJAX Middleware</a>
+<a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware">AJAX Middleware</a>
 * Making AJAX calls with `superagent` HTTP client library to lead conduit data feed
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
 
