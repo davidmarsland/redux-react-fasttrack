@@ -42,7 +42,7 @@
 
 * Flux & Redux Overview
 * Three Principles of Redux
-* Immutable Programming
+* Immutable Data
 * Configuring Actions
 * Creating Reducer Functions
 * Working with Stores
@@ -50,7 +50,7 @@
 * Integrating with React
 * Middleware Overview
 * Creating Custom Middleware
-* React-Thunk and Asynchronous Actions
+* Redux Thunk and Asynchronous Actions
 * Creating Containers with React-Redux
 * Integrating React Router with React/Redux
 * Configuring Paths
@@ -159,10 +159,15 @@ State Management with React and Redux</a>
 ---
 ### Redux can be described in three fundamental principles:
 * Single source of truth. The state of your whole application is stored in an object tree within a single store.
-* State is read-only. The only way to change the state is to emit an action, an object describing what happened. 
+* State is read-only (immutable). The only way to change the state is to emit an action, an object describing what happened. 
 * Changes are made with pure functions.
 
 <a target="_ref" href="https://github.com/reactjs/redux/blob/master/docs/introduction/ThreePrinciples.md">Three Principles of Redux</a>
+
+---
+### Immutable Data
+
+<a target="_ref" href="https://redux.js.org/faq/immutable-data">Redux Immutable Data</a>
 
 ---
 ### Redux Example and Lab
@@ -300,7 +305,7 @@ git commit -am "Added comm across multiple components to loading..."
 git diff -b mylabs02conduit
 ```
 ---
-### Lab: Communicating Across Multiple Components and AJAX Calls
+### Lab: Communicating Across Components, Middleware, and AJAX Calls
 <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware">AJAX Middleware</a>
 * Making AJAX calls with `superagent` HTTP client library to lead conduit data feed
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading">Lab Solution Online</a>
@@ -312,7 +317,22 @@ git checkout -b mylabs04conduitfeed
 ```
 <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/creating-promise-middleware">Creating Promise Middleware</a>
 * Using Middleware, `Promise`, and `mapDispatchToProps` to dispatch actions asynchronously
-<a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
+
+* Note: To enable Redux DevTools with Middleware, see <a target="_ref" href="https://github.com/zalmoxisus/redux-devtools-extension#12-advanced-store-setup">Redux DevTools Advanced Store Setup</a>
+
+In this case, to use Redux DevTools modify `src/index.js`:
+```js
+// const store = createStore(reducer, applyMiddleware(promiseMiddleware));
+
+/* eslint-disable no-undef */
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer, composeEnhancers(applyMiddleware(promiseMiddleware)));
+/* eslint-enable */
+```
+
+---
+### Displaying Retrieved Data in Components
+* <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
 * Update `reducer` to handle `action HOME_PAGE_LOADED`
 * Build `ArticlePreview` component
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitfeed">Lab Solution Online</a>
@@ -323,6 +343,7 @@ git add .
 git commit -am "Loaded data feed and dispatched actions"
 git diff -b mylabs03conduitloading
 ```
+
 ---
 ### Routing in React
 * <a target="_ref" href="https://medium.com/@thejasonfile/basic-intro-to-react-router-v4-a08ae1ba5c42">Intro to React Router v4</a>
@@ -334,6 +355,17 @@ git checkout -b mylabs05router
 ```
 <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">React Router</a>
 * <a target="_reduxsolutions" href="./redux-solutions/mars04router">Lab Solution Online</a>
+
+ To make the Redux DevTools work now, modify 
+ `src/store.js`
+ ```js
+ // const store = createStore(reducer, middleware);
+
+/* eslint-disable no-undef */
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer, composeEnhancers(middleware));
+/* eslint-enable */
+```
 
 Optionally, when you're done:
 ```
@@ -354,6 +386,27 @@ git branch
 Please let us know how class is going for you with this mid-class survey.  Comments are greatly appreciated!
 #### <a target="_ref" href="http://bit.ly/react4-3-18">http://bit.ly/redux4-5-18</a>
 
+---
+### Redux Thunk and Asynchronous Actions
+
+<a target="_ref" href="https://github.com/gaearon/redux-thunk">
+Thunk Middleware for Redux:  redux-thunk</a> by Dan Abramov
+
+<a target="_ref" href="https://codepen.io/stowball/post/a-dummy-s-guide-to-redux-and-thunk-in-react">Redux and Thunk in React Tutorial (long, optional)</a> by Matt Stow
+
+ If you clone Matt's repo and run the example, to use Redux DevTools, modify
+`src/store/configureStore.js` like this:
+```javascript
+export default function configureStore(initialState) {
+    const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+    const store = createStore(rootReducer, initialState, composeEnhancers(
+        applyMiddleware(thunk),
+    ));
+    return store;    
+}
+```
+ See <a target="_ref" href="https://github.com/zalmoxisus/redux-devtools-extension#12-advanced-store-setup">Redux DevTools: Advanced Store Setup
+ 
 ---
 ### React Redux Tutorial: Learning Redux in 2018
 
@@ -647,7 +700,7 @@ git diff -b 04storemethods
 
 <br><input type="checkbox">  Flux & Redux Overview
 <br><input type="checkbox">  Three Principles of Redux
-<br><input type="checkbox">  Immutable Programming
+<br><input type="checkbox">  Immutable Data
 <br><input type="checkbox">  Configuring Actions
 <br><input type="checkbox">  Creating Reducer Functions
 <br><input type="checkbox">  Working with Stores
@@ -655,7 +708,6 @@ git diff -b 04storemethods
 <br><input type="checkbox">  Integrating with React
 <br><input type="checkbox">  Middleware Overview
 <br><input type="checkbox">  Creating Custom Middleware
-<br><input type="checkbox">  React-Thunk and Asynchronous Actions
 <br><input type="checkbox">  Creating Containers with React-Redux
 <br><input type="checkbox">  Integrating React Router with React/Redux
 <br><input type="checkbox">  Configuring Paths
