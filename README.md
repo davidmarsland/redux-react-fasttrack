@@ -1,8 +1,9 @@
 # redux-react-fasttrack
 ### Welcome to FastTrack to Redux with React Training
 
-<a target="_reduxjs" href="https://redux.js.org/" alt="redux"><img src="https://github.com/reactjs/redux/blob/master/logo/apple-touch-icon.png?raw=true" ></a>
-<a title="By ReactJS (https://reactjs.org/) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" target="_reactjs" href="https://commons.wikimedia.org/wiki/File%3AReact.svg"><img width="128" alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/128px-React.svg.png" vspace=10 hspace=64/></a>
+
+<a target="_reduxjs" href="https://redux.js.org/" alt="redux"><img src="https://github.com/reactjs/redux/blob/master/logo/apple-touch-icon.png?raw=true" width=114></a>
+<a title="By ReactJS (https://reactjs.org/) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" target="_reactjs" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/270px-React.svg.png"><img width="128" alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/128px-React.svg.png" vspace=10 hspace=64/></a>
 
 #### Instructor: David Marsland
 
