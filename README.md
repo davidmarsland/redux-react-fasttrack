@@ -2,8 +2,7 @@
 ### Welcome to FastTrack to Redux with React Training
 
 <a target="_redux" href="https://redux.js.org" alt="redux">![redux](images/redux-128.png)</a>
-<img src="./images/redux.png" width=128/></a>
-<a target="_reactjs" href="https://reactjs.org" alt="redux">![redux](images/128px-React.svg.png)</a>
+<a target="_reactjs" href="https://reactjs.org" alt="react">![react](images/128px-React.svg.png)</a>
 
 #### Instructor: David Marsland
 
