@@ -11,6 +11,7 @@
 <br>
 <a target="_git_react" href="https://davidmarsland.github.io/redux-react-fasttrack/">https://davidmarsland.github.io/redux-react-fasttrack/</a>
 
+##### © 2018 David Marsland 
 ---
 ### FastTrack to Redux with React Training
 **FastTrack to Redux with React Training** ​teaches students how to use two important React-related libraries: Redux and React Router.
@@ -208,6 +209,7 @@ npm install
 ---
 ### Redux Labs from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a>
 
+<a target="_thinkster" href="https://thinkster.io" alt="thinkster.io"><img src="images/thinkster.png"></a>
 
  <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a></a>
 
@@ -727,3 +729,4 @@ git diff -b 04storemethods
 ### Thanks, please fill out course eval now, your comments are greatly appreciated!
 #### <a target="_ref" href="https://www.surveymonkey.com/r/KHSXLM8">https://www.surveymonkey.com/r/KHSXLM8</a>
 
+##### © 2018 David Marsland 
