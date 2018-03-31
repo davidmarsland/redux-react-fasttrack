@@ -10,9 +10,6 @@
 
  ![DevelopIntelligence](images/Develop-Intelligence-logo-f.png)
  
-<a target="_di" href="https://developintelligence.com">https://developintelligence.com</a>
-
-
 <a target="_git_react" href="https://davidmarsland.github.io/redux-react-fasttrack/">https://davidmarsland.github.io/redux-react-fasttrack/</a>
 
  © 2018 David Marsland 
