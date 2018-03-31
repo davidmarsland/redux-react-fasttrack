@@ -1,7 +1,7 @@
 # redux-react-fasttrack
 ### Welcome to FastTrack to Redux with React Training
 
-<a target="_reduxjs" href="https://reduxjs.org/" alt="thinkster.io"><img src="images/redux.png" width=128  style="padding:20;" ></a>
+<a target="_reduxjs" href="https://reduxjs.org/" alt="thinkster.io"><img src="images/redux.png" width=128></a>
 <a title="By ReactJS (https://reactjs.org/) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" target="_reactjs" href="https://reactjs.org/" alt="thinkster.io"><img src="images/128px-React.svg.png" vspace=10 hspace=64></a>
 
 #### Instructor: David Marsland
