@@ -3,13 +3,13 @@
 
 <a target="_redux" href="https://redux.js.org" alt="redux">![redux](images/redux-128.png)</a>
 <a target="_reactjs" href="https://reactjs.org" alt="react">![react](images/128px-React.svg.png)</a>
+
 #### Instructor: David Marsland
 
 #### Macy's SF Schedule: 4/5-4/6/2018 9:30am – 4:30pm
-<br>
-<img src="http://www.developintelligence.com/sites/all/themes/diresponsive/images/Develop-Intelligence-logo-f.png">
-<br>
-<a target="_di" href="http://developintelligence.com">DevelopIntelligence.com</a>
+
+![DevelopIntelligence](images/Develop-Intelligence-logo-f.png)
+<a target="_di" href="https://developintelligence.com">https://developintelligence.com</a>
 <br>
 <a target="_git_react" href="https://davidmarsland.github.io/redux-react-fasttrack/">https://davidmarsland.github.io/redux-react-fasttrack/</a>
 
@@ -212,7 +212,7 @@ npm install
 ---
 ### Redux Labs from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a>
 
-<a target="_thinkster" href="https://thinkster.io" alt="thinkster.io"><img src="https://thinkster.io/assets/logo_white-8fe7a91217289bda01394dc37f2c6afd544f17d4e17825803805630294bee76a.png" ></a>
+<a target="_thinkster" href="https://thinkster.io" alt="thinkster.io">![thinkster](images/thinkster.png)</a>
 
  <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a></a>
 
