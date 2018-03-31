@@ -1,8 +1,8 @@
 # redux-react-fasttrack
 ### Welcome to FastTrack to Redux with React Training
 
-<a target="_reduxjs" href="https://reduxjs.org/" alt="thinkster.io"><img src="images/redux.png" width=128></a>
-<a title="By ReactJS (https://reactjs.org/) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" target="_reactjs" href="https://reactjs.org/" alt="thinkster.io"><img src="images/128px-React.svg.png" vspace=10 hspace=64></a>
+<a target="_reduxjs" href="https://redux.js.org/" alt="thinkster.io"><img src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-L5K1I1WsuQMZ8ecEuWg%2Favatar.png?generation=1518623866348435&alt=media" width=128></a>
+<a title="By ReactJS (https://reactjs.org/) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" target="_reactjs" href="https://commons.wikimedia.org/wiki/File%3AReact.svg"><img width="128" alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/128px-React.svg.png" vspace=10 hspace=64/></a>
 
 #### Instructor: David Marsland
 
@@ -213,7 +213,7 @@ npm install
 ---
 ### Redux Labs from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a>
 
-<a target="_thinkster" href="https://thinkster.io" alt="thinkster.io"><img src="images/thinkster.png"></a>
+<a target="_thinkster" href="https://thinkster.io" alt="thinkster.io"><img src="https://thinkster.io/assets/logo_white-8fe7a91217289bda01394dc37f2c6afd544f17d4e17825803805630294bee76a.png" ></a>
 
  <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a></a>
 
