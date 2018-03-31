@@ -2,8 +2,9 @@
 ### Welcome to FastTrack to Redux with React Training
 
 <a target="_redux" href="https://redux.js.org" alt="redux">![redux](images/redux-128.png)</a>
-<a target="_reactjs" href="https://reactjs.org" alt="react">![react](images/128px-React.svg.png)</a>
+<img width="128" alt="React" src="images/128px-React.svg.png" vspace=10 hspace=64/>
 
+<a target="_reactjs" href="https://reactjs.org" alt="react">![react](images/128px-React.svg.png)</a>
 #### Instructor: David Marsland
 
 #### Macy's SF Schedule: 4/5-4/6/2018 9:30am – 4:30pm
