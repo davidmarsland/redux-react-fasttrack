@@ -1,6 +1,9 @@
 # redux-react-fasttrack
 ### Welcome to FastTrack to Redux with React Training
 
+<a target="_reduxjs" href="https://reduxjs.org/" alt="thinkster.io"><img src="images/redux.png" width=128  style="padding:20;" ></a>
+<a title="By ReactJS (https://reactjs.org/) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" target="_reactjs" href="https://reactjs.org/" alt="thinkster.io"><img src="images/128px-React.svg.png" vspace=10 hspace=64></a>
+
 #### Instructor: David Marsland
 
 #### Macy's SF Schedule: 4/5-4/6/2018 9:30am – 4:30pm
@@ -11,7 +14,8 @@
 <br>
 <a target="_git_react" href="https://davidmarsland.github.io/redux-react-fasttrack/">https://davidmarsland.github.io/redux-react-fasttrack/</a>
 
-##### © 2018 David Marsland 
+ © 2018 David Marsland 
+
 ---
 ### FastTrack to Redux with React Training
 **FastTrack to Redux with React Training** ​teaches students how to use two important React-related libraries: Redux and React Router.
@@ -729,4 +733,4 @@ git diff -b 04storemethods
 ### Thanks, please fill out course eval now, your comments are greatly appreciated!
 #### <a target="_ref" href="https://www.surveymonkey.com/r/KHSXLM8">https://www.surveymonkey.com/r/KHSXLM8</a>
 
-##### © 2018 David Marsland 
+© 2018 David Marsland 
