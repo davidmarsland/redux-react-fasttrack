@@ -2,7 +2,7 @@
 ### Welcome to FastTrack to Redux with React Training
 
 
-<img src="https://github.com/reactjs/redux/blob/master/logo/apple-touch-icon.png" width=128>
+<img src="https://github.com/davidmarsland/redux-react-fasttrack/blob/master/images/redux.png" width=128>
 <img width="128" alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/128px-React.svg.png" vspace=10 hspace=64/>
 
 #### Instructor: David Marsland
