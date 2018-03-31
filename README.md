@@ -1,5 +1,7 @@
 # redux-react-fasttrack
 ### Welcome to FastTrack to Redux with React Training
+
+![redux](images/redux.png)
 <a target="_redux" href="https://redux.js.org" alt="redux"><img src="https://github.com/davidmarsland/redux-react-fasttrack/blob/master/images/redux.png" width=128/></a>
 <img width="128" alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/128px-React.svg.png" vspace=10 hspace=64/>
 
