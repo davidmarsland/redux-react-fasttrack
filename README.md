@@ -206,10 +206,13 @@ npm install
 ```
 
 ---
-### Redux Labs
+### Redux Labs from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a>
 
 
-* <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from thinkster.io</a>
+ <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a></a>
+
+Create a free account and/or login with github on <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io: Learn The Fundamentals of Redux</a>
+
 <br>Note, to do the labs you will have to change git commands similar to this:
 
 Starting from `redux-fasttrack` directory:
@@ -222,11 +225,10 @@ cd react-redux-realworld-example-app
 npm install
 npm run start
 ```
-* Create a free account and/or login with github on <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">Thinkster: Learn The Fundamentals of Redux from thinkster.io</a>
 
 ---
 ### Lab: Learn the Fundamentals of Redux
-* Do the first `thinkster` lab <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux">Lab: Learn the Fundamentals of Redux</a>
+* Do the first <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux">thinkster.io Lab: Learn the Fundamentals of Redux</a>
 
 * Optionally you can create your own git branches to save key steps of your labs. 
   From a new terminal or powershell:
@@ -252,8 +254,9 @@ For a basic Redux store simply add:
 ```
 
 ---
-### Lab: Displaying the State
-<a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/displaying-the-state">Lab: Displaying the State<a>
+### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Displaying the State
+
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/displaying-the-state">thinkster.io Lab: Displaying the State<a>
 * Subscribe the store to React's `setState()`
 * Display checkbox tied to state
 * <a target="_reduxsolutions" href="./redux-solutions/mars01todos/">Lab Solution Online</a>
@@ -267,8 +270,8 @@ git diff -b mylabs00start
 ```
 
 ---
-### Lab: Using react-redux to Develop Conduit Site
-<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">Setting up react-redux</a>
+### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Using react-redux to Develop Conduit Site
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">thinkster.io Lab: Setting up react-redux</a>
 
 Optional: create and checkout a new branch for the next lab
 ```
@@ -290,8 +293,8 @@ git commit -am "Started Conduit site with react-redux"
 git diff -b mylabs01reduxtodos
 ```
 ---
-### Lab: Redux with Multiple Components
-<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">Communicating Across Multiple Components</a>
+### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Redux with Multiple Components
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">thinkster.io Lab: Communicating Across Multiple Components</a>
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading/">Lab Solution Online</a>
 
 Optional: before you start coding:
@@ -305,17 +308,17 @@ git commit -am "Added comm across multiple components to loading..."
 git diff -b mylabs02conduit
 ```
 ---
-### Lab: Communicating Across Components, Middleware, and AJAX Calls
-<a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware">AJAX Middleware</a>
+### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Communicating Across Components, Middleware, and AJAX Calls
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware">thinkster.io Lab: AJAX Middleware</a>
 * Making AJAX calls with `superagent` HTTP client library to lead conduit data feed
 * <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading/">Lab Solution Online</a>
 
 ---
-### Lab: Loading Data Feed
+### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Loading Data Feed
 ```
 git checkout -b mylabs04conduitfeed
 ```
-<a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/creating-promise-middleware">Creating Promise Middleware</a>
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/creating-promise-middleware">thinkster.io Lab: Creating Promise Middleware</a>
 * Using Middleware, `Promise`, and `mapDispatchToProps` to dispatch actions asynchronously
 
 * Note: To enable Redux DevTools with Middleware, see <a target="_ref" href="https://github.com/zalmoxisus/redux-devtools-extension#12-advanced-store-setup">Redux DevTools Advanced Store Setup</a>
@@ -332,7 +335,7 @@ const store = createStore(reducer, composeEnhancers(applyMiddleware(promiseMiddl
 
 ---
 ### Displaying Retrieved Data in Components
-* <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">Displaying Retrieved Data in Components</a>
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/react-redux-ajax-middleware/displaying-retrieved-data">thinkster.io Lab: Displaying Retrieved Data in Components</a>
 * Update `reducer` to handle `action HOME_PAGE_LOADED`
 * Build `ArticlePreview` component
 * <a target="_reduxsolutions" href="./redux-solutions/mars03feed/">Lab Solution Online</a>
@@ -346,14 +349,14 @@ git diff -b mylabs03conduitloading
 
 ---
 ### Routing in React
-* <a target="_ref" href="https://medium.com/@thejasonfile/basic-intro-to-react-router-v4-a08ae1ba5c42">Intro to React Router v4</a>
+#### <a target="_ref" href="https://medium.com/@thejasonfile/basic-intro-to-react-router-v4-a08ae1ba5c42">Intro to React Router v4</a>
 
 ---
-### Lab: Adding React Router
+### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Adding React Router
 ```
 git checkout -b mylabs05router
 ```
-<a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">React Router</a>
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/react-router">thinkster.io Lab: React Router</a>
 * <a target="_reduxsolutions" href="./redux-solutions/mars04router/">Lab Solution Online</a>
 
  To make the Redux DevTools work now, modify 
@@ -375,10 +378,10 @@ git diff -b mylabs04conduitfeed
 git branch
 ```
 ---
-### More Advanced Training Available from Thinkster.io
+### More Advanced Training Available from <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a>
 * <a target="_thinkster" href="https://thinkster.io/topics/react">Advanced React and Redux Online Training (need PRO subscription)</a>
 
-* More Advanced Online Training Available on <a target="_ref" href="https://thinkster.io/">thinkster.io</a>
+* More Advanced Online Training Available from <a target="_ref" href="https://thinkster.io/">thinkster.io</a>
 
 ---
 ### Mid-class Survey
