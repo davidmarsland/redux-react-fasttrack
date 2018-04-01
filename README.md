@@ -234,7 +234,7 @@ npm run start
 ### Lab: Learn the Fundamentals of Redux
 * Do the first <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux">thinkster.io Lab: Learn the Fundamentals of Redux</a>
 
-* Optionally you can create your own git branches to save key steps of your labs. 
+* Optional: you can create your own git branches to save key steps of your labs. 
   From a new terminal or powershell:
 ```
 cd react-redux-realworld-example-app
@@ -277,7 +277,7 @@ git diff -b mylabs00start
 ### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Using react-redux to Develop Conduit Site
 Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">thinkster.io Lab: Setting up react-redux</a>
 
-Optional: create and checkout a new branch for the next lab
+Optional: create and checkout a new branch for this lab
 ```
 git checkout -b mylabs02conduit
 ```
@@ -298,13 +298,13 @@ git diff -b mylabs01reduxtodos
 ```
 ---
 ### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Redux with Multiple Components
-Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">thinkster.io Lab: Communicating Across Multiple Components</a>
-* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading/">Lab Solution Online</a>
-
-Optional: before you start coding:
+ Optional: before you start coding:
 ```
 git checkout -b mylabs03conduitloading
 ```
+Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/communicating-across-multiple-components">thinkster.io Lab: Communicating Across Multiple Components</a>
+* <a target="_reduxsolutions" href="./redux-solutions/mars03conduitloading/">Lab Solution Online</a>
+
 Optional: when you're done with the lab
 ```
 git add .
@@ -350,6 +350,10 @@ git add .
 git commit -am "Loaded data feed and dispatched actions"
 git diff -b mylabs03conduitloading
 ```
+
+---
+### More about react-redux connect()
+<a target="_ref" href="https://www.sohamkamani.com/blog/2017/03/31/react-redux-connect-explained/">React-redux connect() explained </a>
 
 ---
 ### Routing in React
@@ -401,7 +405,16 @@ Thunk Middleware for Redux:  redux-thunk</a> by Dan Abramov
 
 <a target="_ref" href="https://codepen.io/stowball/post/a-dummy-s-guide-to-redux-and-thunk-in-react">Redux and Thunk in React Tutorial (long, optional)</a> by Matt Stow
 
- If you clone Matt's repo and run the example, to use Redux DevTools, modify
+Optional: Starting in directory  `redux-fasttrack`, clone Matt's repo and run the example:
+ ```
+git clone https://github.com/stowball/dummys-guide-to-redux-and-thunk-react.git
+
+cd dummys-guide-to-redux-and-thunk-react
+npm install
+npm run start
+``` 
+ 
+To use Redux DevTools with this, modify
 `src/store/configureStore.js` like this:
 ```javascript
 export default function configureStore(initialState) {
