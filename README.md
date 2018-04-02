@@ -156,8 +156,8 @@ Web Development since the Dawn of the Web <br>
 ### Redux
 <a target="_ref" href="https://redux.js.org/">redux.js.org</a>
 
-<a target="_ref" href="http://blog.isquaredsoftware.com/presentations/2017-02-react-redux-intro/#/33">
-State Management with React and Redux</a>
+<a target="_isquared" href="http://blog.isquaredsoftware.com/presentations/2017-02-react-redux-intro/#/33">
+State Management with React and Redux</a> from isquaredsoftware
 
 ---
 ### Redux can be described in three fundamental principles:
@@ -352,6 +352,11 @@ git diff -b mylabs03conduitloading
 ```
 
 ---
+### Redux Middleware
+
+<a target="_isquared" href="http://blog.isquaredsoftware.com/presentations/2017-02-react-redux-intro/#/42">Redux Middleware</a> from isquaredsoftware
+
+___
 ### More about react-redux connect()
 <a target="_ref" href="https://www.sohamkamani.com/blog/2017/03/31/react-redux-connect-explained/">React-redux connect() explained </a>
 
@@ -397,6 +402,9 @@ git branch
 Please let us know how class is going for you with this mid-class survey.  Comments are greatly appreciated!
 #### <a target="_ref" href="http://bit.ly/react4-3-18">http://bit.ly/redux4-5-18</a>
 
+---
+### A Guide For Building A React Redux CRUD App by rajaraodv
+<a target="_crud" href="https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f">A Guide For Building A React Redux CRUD App</a> by rajaraodv
 ---
 ### Redux Thunk and Asynchronous Actions
 
