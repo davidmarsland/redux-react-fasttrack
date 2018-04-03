@@ -43,7 +43,7 @@ Web Development since the Dawn of the Web <br>
 
 * Prerequisites: Advanced JavaScript ES6 and React Development Experience
 
-  Ideally attendees of **FastTrack to React Training** with 3-6 months of recent Javascript experience.
+  Ideally attendees of <a target="_react_fasttrack" href="https://davidmarsland.github.io/react-fasttrack/">FastTrack to React Training</a> with 3-6 months of recent Javascript experience.
 
 * If you want to learn more about ES6, aka ES2015, here are some good tutorials:
       <br><a target="_babel" href="https://babeljs.io/learn-es2015/">https://babeljs.io/learn-es2015/</a>
