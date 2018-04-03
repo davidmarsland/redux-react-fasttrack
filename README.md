@@ -15,6 +15,23 @@
  © 2018 David Marsland 
 
 ---
+### Introducing your instructor, David Marsland
+<a target="_ref" href="https://www.linkedin.com/in/davidemarsland">https://www.linkedin.com/in/davidemarsland</a>
+<br>
+<br>
+Web Development since the Dawn of the Web <br>
+<a target="_ref" href="https://web.archive.org/web/19970616152144fw_/http://reality.sgi.com:80/mars_corp/"><img src="https://web.archive.org/web/19971210071250im_/http://reality.sgi.com:80/images/sgipowered.gif" />
+<br>Wayback Machine 1997 reality.sgi.com/mars_corp</a>
+
+---
+### Life after SGI
+* Sun Java Certified Developer and Instructor 1998-2004
+* eBay Chief Instructor 2004-2009
+* Sencha Chief Instructor / Training Director 2010-2015
+* Marsland Enterprises Chief Instructor 2015-
+* DevelopIntelligence Senior Technical Instructor 2017-
+
+---
 ### FastTrack to Redux with React Training
 **FastTrack to Redux with React Training** ​teaches students how to use two important React-related libraries: Redux and React Router.
 
@@ -132,23 +149,7 @@ Jetbrains IDEs, either WebStorm or IntelliJ.
  We'll do more setup in class as needed
 
 ---
-### Introducing your instructor, David Marsland
-<a target="_ref" href="https://www.linkedin.com/in/davidemarsland">https://www.linkedin.com/in/davidemarsland</a>
-<br>
-<br>
-Web Development since the Dawn of the Web <br>
-<a target="_ref" href="https://web.archive.org/web/19970616152144fw_/http://reality.sgi.com:80/mars_corp/"><img src="https://web.archive.org/web/19971210071250im_/http://reality.sgi.com:80/images/sgipowered.gif" />
-<br>Wayback Machine 1997 reality.sgi.com/mars_corp</a>
 
----
-### Life after SGI
-* Sun Java Certified Developer and Instructor 1998-2004
-* eBay Chief Instructor 2004-2009
-* Sencha Chief Instructor / Training Director 2010-2015
-* Marsland Enterprises Chief Instructor 2015-
-* DevelopIntelligence Senior Technical Instructor 2017-
-
----
 ### Flux
 <a target="_ref" href="http://facebook.github.io/flux/docs/in-depth-overview.html#content">Flux from Facebook
 
@@ -407,7 +408,6 @@ Please let us know how class is going for you with this mid-class survey.  Comme
 <a target="_crud" href="https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f">A Guide For Building A React Redux CRUD App</a> by rajaraodv
 ---
 ### Redux Thunk and Asynchronous Actions
-
 <a target="_ref" href="https://github.com/gaearon/redux-thunk">
 Thunk Middleware for Redux:  redux-thunk</a> by Dan Abramov
 
