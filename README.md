@@ -282,7 +282,7 @@ git diff -b mylabs00start
 ---
 ### Enabling Sourcmaps
 
- From <a target="_ref" href="https://survivejs.com/webpack/building/source-maps/">Enabling Sourcemaps</a>:
+ From <a target="_ref" href="https://survivejs.com/webpack/building/source-maps/">Enabling Sourcemaps:  https://survivejs.com/webpack/building/source-maps/</a>
  > Enabling Source Maps in Webpack
  To get started, you can wrap the core idea within a configuration part. You can convert this to use the plugins later if you want:
 
@@ -449,10 +449,14 @@ Please let us know how class is going for you with this mid-class survey.  Comme
 <a target="_crud" href="https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f">A Guide For Building A React Redux CRUD App</a> by rajaraodv
 ---
 ### Redux Thunk and Asynchronous Actions
-<a target="_ref" href="https://github.com/gaearon/redux-thunk">
+* <a target="_ref" href="https://github.com/gaearon/redux-thunk">
 Thunk Middleware for Redux:  redux-thunk</a> by Dan Abramov
 
-<a target="_ref" href="https://codepen.io/stowball/post/a-dummy-s-guide-to-redux-and-thunk-in-react">Redux and Thunk in React Tutorial (long, optional)</a> by Matt Stow
+* Optional tutorial for reference: <a target="_ref" href="https://medium.com/@notrab/getting-started-with-create-react-app-redux-react-router-redux-thunk-d6a19259f71f">Getting started with create-react-app, Redux, React Router & Redux Thunk</a>
+
+---
+### More references on Redux and Thunk 
+* <a target="_ref" href="https://codepen.io/stowball/post/a-dummy-s-guide-to-redux-and-thunk-in-react">Redux and Thunk in React Tutorial (long, optional)</a> by Matt Stow
 
 Optional: Starting in directory  `redux-fasttrack`, clone Matt's repo and run the example:
  ```
