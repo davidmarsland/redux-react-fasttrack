@@ -149,7 +149,11 @@ Jetbrains IDEs, either WebStorm or IntelliJ.
  We'll do more setup in class as needed
 
 ---
+### Debugging React Apps
 
+ <a target="_ref" href="https://medium.com/@baphemot/intro-to-debugging-reactjs-applications-67cf7a50b3dd">Debugging ReactJS Apps</a>
+
+---
 ### Flux
 <a target="_ref" href="http://facebook.github.io/flux/docs/in-depth-overview.html#content">Flux from Facebook
 
