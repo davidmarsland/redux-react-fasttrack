@@ -110,10 +110,11 @@ Should be greater than 5.2.
 Install eslint
 ```
 npm install -g eslint
+eslint -v
 ```
 If npm -g doesn't work, you may have permissions issues. A workaround is `npx` which will get from npm if needed and install in local directory.
 ```
-npx install -g eslint
+npx eslint -v
 ```
   <a target="_ref" href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">Fixing NPM Permissions on Mac or Linux</a>
 
@@ -701,7 +702,7 @@ git diff -b 04storemethods
 * <a target="_ref" href="http://reactquickly.co/demos">http://reactquickly.co/demos</a>
 * <a target="_ref" href=" ">Review React Foundation Course Videos from Azat Mardan</a>
 <a target="_react-quickly" href="https://livebook.manning.com/#!/book/react-quickly">React Quickly Book by Azat Mardan: Livebook</a>
-* <a target="_ref" href=" ">React Quickly Summaries</a>
+* <a target="_ref" href="https://node.university/p/react-quickly-summaries">React Quickly Summaries</a>
 
 ---
 ### Testing React Components
