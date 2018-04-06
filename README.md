@@ -280,41 +280,6 @@ git diff -b mylabs00start
 ```
 
 ---
-### Enabling Sourcmaps
-
- From <a target="_ref" href="https://survivejs.com/webpack/building/source-maps/">Enabling Sourcemaps:  https://survivejs.com/webpack/building/source-maps/</a>
- > Enabling Source Maps in Webpack
- To get started, you can wrap the core idea within a configuration part. You can convert this to use the plugins later if you want:
-
-`webpack.parts.js`
-```
-exports.generateSourceMaps = ({ type }) => ({
-  devtool: type,
-});
-```
- Webpack supports a wide variety of source map types. These vary based on quality and build speed. For now, you enable source-map for production and let webpack use the default for development. Set it up as follows:
-
-`webpack.config.js`
-```
-const productionConfig = merge([
-  parts.generateSourceMaps({ type: "source-map" }),
-]);
-```
-source-map is the slowest and highest quality option of them all, but that's fine for a production build.
-
-If you build the project now (`npm run build`), you should see source maps in the output:
-```
-npm run build
-```
- The build folder is ready to be deployed.
- You may also serve it locally with a static server:
-```
-  npm install -g pushstate-server
-  pushstate-server build
-  open http://localhost:9000
-```
-
----
 
 ### <a target="_thinkster" href="https://thinkster.io/tutorials/learn-redux/">thinkster.io</a> Lab: Using react-redux to Develop Conduit Site
 Follow the steps in this <a target="_thinkster" href="https://thinkster.io/tutorials/setting-up-react-redux/introducing-react-redux">thinkster.io Lab: Setting up react-redux</a>
@@ -761,6 +726,42 @@ git diff -b 04storemethods
 * <a target="_ref" href="https://www.robinwieruch.de/tips-to-learn-react-redux/">Tips to learn React + Redux in 2018</a>
 
 ---
+### Reference: Enabling Sourcmaps
+
+ From <a target="_ref" href="https://survivejs.com/webpack/building/source-maps/">Enabling Sourcemaps:  https://survivejs.com/webpack/building/source-maps/</a>
+ > Enabling Source Maps in Webpack
+ To get started, you can wrap the core idea within a configuration part. You can convert this to use the plugins later if you want:
+
+`webpack.parts.js`
+```
+exports.generateSourceMaps = ({ type }) => ({
+  devtool: type,
+});
+```
+ Webpack supports a wide variety of source map types. These vary based on quality and build speed. For now, you enable source-map for production and let webpack use the default for development. Set it up as follows:
+
+`webpack.config.js`
+```
+const productionConfig = merge([
+  parts.generateSourceMaps({ type: "source-map" }),
+]);
+```
+source-map is the slowest and highest quality option of them all, but that's fine for a production build.
+
+If you build the project now (`npm run build`), you should see source maps in the output:
+```
+npm run build
+```
+ The build folder is ready to be deployed.
+ You may also serve it locally with a static server:
+```
+  npm install -g pushstate-server
+  pushstate-server build
+  open http://localhost:9000
+```
+
+---
+
 ### Course Review
 ### Course Objectives
 <input type="checkbox">  Describe Redux and the problem it solves
