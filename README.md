@@ -5,10 +5,6 @@
 <a target="_reactjs" href="https://reactjs.org" alt="react">![react](images/128px-React.svg.png)</a>
 
 #### Instructor: David Marsland
-
-#### Macy's SF Schedule: 4/5-4/6/2018 9:30am – 4:30pm
-
- ![DevelopIntelligence](images/Develop-Intelligence-logo-f.png)
  
 ### <a target="_git_react" href="https://davidmarsland.github.io/redux-react-fasttrack/">https://davidmarsland.github.io/redux-react-fasttrack/</a>
 
@@ -792,10 +788,6 @@ npm run build
 ---
 ### Congratulations, you are now all React and Redux Developers!
 
-<a target="_di" href="https://developintelligence.com">![DevelopIntelligence](images/Develop-Intelligence-logo-f.png)<br></a>
-<br>
 <a target="_git_react" href="https://davidmarsland.github.io/react-spike/">https://davidmarsland.github.io/react-spike/</a>
-### Thanks, please fill out course eval now, your comments are greatly appreciated!
-#### <a target="_ref" href="https://www.surveymonkey.com/r/KHSXLM8">https://www.surveymonkey.com/r/KHSXLM8</a>
 
 © 2018 David Marsland 
